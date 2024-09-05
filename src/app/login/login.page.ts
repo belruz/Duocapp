@@ -18,8 +18,10 @@ export class LoginPage  {
   
   login(){
     if (this.correo == 'admin@gmail.com' && this.password == '12345'){
-      alert('es admin')
       this.navCtrl.navigateForward("/bienvenida")
+    }
+    else if (this.correo == 'alumn@gmail.com' && this.password == '54321'){
+      this.navCtrl.navigateForward("/bienvenida-alum")
     }
     else {
       alert('no esta en la base de datos')

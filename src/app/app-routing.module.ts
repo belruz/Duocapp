@@ -14,7 +14,11 @@ const routes: Routes = [
   {
     path: 'bienvenida',
     loadChildren: () => import('./bienvenida/bienvenida.module').then( m => m.BienvenidaPageModule)
+  },  {
+    path: 'bienvenida-alum',
+    loadChildren: () => import('./bienvenida-alum/bienvenida-alum.module').then( m => m.BienvenidaAlumPageModule)
   },
+
 
 
 ];
